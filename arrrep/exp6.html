@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        input, button {
+            margin: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Array Operations</h1>
+        <label for="arrayLength">Array Length:</label>
+        <input type="number" id="arrayLength" min="1">
+        <button onclick="setArrayLength()">Set Array Length</button>
+        <br>
+        <label for="arrayElements">Array Elements (comma separated):</label>
+        <input type="text" id="arrayElements" placeholder="e.g., 1,2,3,4,5">
+        <button onclick="setArrayElements()">Set Array Elements</button>
+        <br>
+        <label for="elementToRemove">Element to Remove:</label>
+        <input type="number" id="elementToRemove">
+        <button onclick="removeElement()">Remove Element</button>
+        <br>
+        <label for="valueToCheck">Value to Check:</label>
+        <input type="number" id="valueToCheck">
+        <button onclick="checkValue()">Check Value</button>
+        <br>
+        <button onclick="displayArray()">Display Array</button>
+        <br>
+        <button onclick="emptyArray()">Empty Array</button>
+        <div id="result"></div>
+    </div>
+    <script src="exp6.js"></script>
+</body>
+</html>

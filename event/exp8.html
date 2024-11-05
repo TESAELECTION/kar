@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Over & Focus Events</title>
+    <!-- <style>
+        /* body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            transition: background 0.3s ease;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        button {
+            width: 150px;
+            height: 50px;
+            margin: 10px;
+            background-color: #008CBA;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        } */
+        /* button:hover {
+            background-color: #005f73;
+        }
+        button:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 140, 186, 0.6);
+        } */
+    </style> -->
+</head>
+<body>
+    <div class="container">
+        <h1>Mouse Over & Focus Events</h1>
+        <div>
+            <h2>On Mouse Over</h2>
+            <p>The <strong>onmouseover</strong> event changes the background color when hovered over.</p>
+            <button onmouseover="changeHoverBackgroundColor()" onmouseout="resetBackgroundColor()">Hover over me!</button>
+        </div>
+        <div>
+            <h2>On Focus</h2>
+            <p>The <strong>onfocus</strong> event changes the background color when focused.</p>
+            <button onfocus="changeFocusBackgroundColor()" onblur="resetBackgroundColor()">Focus on me!</button>
+        </div>
+    </div>
+    <script>
+        // JavaScript functions to change the background of the entire body
+
+        // Change the background color of the page on hover
+        function changeHoverBackgroundColor() {
+            document.body.style.background = "lightyellow"; // Light yellow
+        }
+
+        // Change the background color of the page on focus
+        function changeFocusBackgroundColor() {
+            document.body.style.background = "lightgreen"; // Light green
+        }
+
+        // Reset the background to the default gradient
+        function resetBackgroundColor() {
+            document.body.style.background = "white"; // Default gradient
+        }
+    </script>
+</body>
+</html>

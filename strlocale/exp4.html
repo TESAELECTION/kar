@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+    <!-- <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: large;
+        }
+    </style> -->
+    <body>
+        <div class="container">
+            <h1>String Comparison</h1>
+            Enter string 1 = <input type = "text" id = "string_1">
+            <br><br>Enter string 2 = <input type = "text" id = "string_2">
+            
+                <h2>Compare Using Strict Equality</h2>
+                <button onclick="compareStrict()">Compare</button>
+                <h3 id="result_compare_strict" ></h3>
+            
+            
+                <h2>Compare Using Length and Comparison Operator</h2>
+                <button onclick="compareLength()">Compare</button>
+                <h3 id="result_compare_length" ></h3>
+            
+           
+                <h2>Compare Using Local Compare</h2>
+                <button onclick="compareLocal()">Compare</button>
+                <h3 id="result_compare_local" ></h3>
+            
+        </div>
+        <script src="exp4.js"></script>
+    </body>
+</html>

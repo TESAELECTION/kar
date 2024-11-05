@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <!-- <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .time_remaining {
+            margin-top: 20px;
+        }
+    </style> -->
+    <body>
+        <div class="container">
+            <h1>Countdown Timer</h1>
+            Enter the target date and time: <input type="datetime-local" id="target_date">
+            <br><br>
+            
+                <h2>Remaining Time</h2>
+                <p><strong>Days:</strong> <span id="daysValue">0</span></p>
+                <p><strong>Hours:</strong> <span id="hoursValue">0</span></p>
+                <p><strong>Minutes:</strong> <span id="minutesValue">0</span></p>
+                <p><strong>Seconds:</strong> <span id="secondsValue">0</span></p>
+            
+            <h3 id="countdown_expired"></h3>
+        </div>
+        <script src="exp5.js"></script>
+    </body>
+</html>

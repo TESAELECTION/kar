@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <!-- <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: large;
+        }
+    </style> -->
+    <body>
+        <div class="container">
+            <h1>String Operations</h1>
+            <br> Enter a string = <input type="text" id="input_string">
+            
+                <h2>Reversing the string</h2>
+                <button onclick="reverseString()">Reverse String</button>
+                <h3 id="result_reverse" ></h3>
+            
+            
+                <h2>Replacing a Character by Index</h2>
+                Enter index = <input type="number" id="index_position">
+                <br><br> Enter replacement character = <input type="text" id="replacement_char" maxlength="1">
+                <br><br><button onclick="replaceCharByIndex()">Replace Character</button>
+                <h3 id="result_replace" ></h3>
+            
+            
+                <h2>Checking Palindrome</h2>
+                <button onclick="checkPalindrome()">Check Palindrome</button>
+                <h3 id="result_palindrome" ></h3>
+            
+        </div>
+        <script src="exp3.js"></script>
+    </body>
+</html>

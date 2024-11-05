@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /* body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            .container {
+                text-align: center;
+            }
+            .result {
+                margin-top: 20px;
+            } */
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Multiplication Tables</h1>
+            
+            <!-- Do-While Loop -->
+            <br>Number (Do-While) = <input type="number" id="number1">
+            <br><br>Length = <input type="number" id="length1">
+            <br><br><button onclick="do_while()">Get Table (Do-While)</button>
+            <h3 id="result_do_while"></h3>
+
+            <!-- For Loop -->
+            <br><br>Number (For) = <input type="number" id="number2">
+            <br><br>Length = <input type="number" id="length2">
+            <br><br><button onclick="for_loop()">Get Table (For)</button>
+            <h3 id="result_for"></h3>
+
+            <!-- While Loop -->
+            <br><br>Number (While) = <input type="number" id="number3">
+            <br><br>Length = <input type="number" id="length3">
+            <br><br><button onclick="while_loop()">Get Table (While)</button>
+            <h3 id="result_while"></h3>
+
+        </div>
+        <script src="exp2.js"></script>
+    </body>
+</html>
+
